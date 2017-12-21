@@ -1,0 +1,614 @@
+.alert-error {
+    background-color: #fff2f2;
+    border-color: #ff8e8e;
+    color: #333333;
+    width: 378px;
+    white-space: nowrap; /* 强制不换行 */
+    text-overflow: ellipsis; /* 超出长度显示省略号 */
+    overflow: hidden; /* 不显示滚动条 */
+
+}
+
+#kc-locale ul {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    list-style: none;
+    right: 20px;
+    top: 30px;
+    width: 200px;
+    padding: 2px;
+}
+
+#kc-locale:hover ul {
+    display: block;
+    margin: 0;
+}
+
+#kc-locale ul li a {
+    display: block;
+    padding: 1px 11px;
+    color: #000 !important;
+    border: 1px solid #fff;
+    text-decoration: none;
+    display:block;
+    line-height: 20px;
+}
+
+#kc-locale ul li a:hover {
+    color: #4d5258;
+    background-color: #d4edfa;
+    border-color: #b3d3e7;
+}
+
+#kc-locale-dropdown a {
+    color: #fff;
+}
+
+#kc-locale-dropdown a:hover {
+    text-decoration: none;
+}
+
+a#kc-current-locale-link {
+    display: block;
+    padding: 5px;
+}
+
+a#kc-current-locale-link:hover {
+    background-color: rgba(0,0,0,0.2);
+}
+
+a#kc-current-locale-link::after {
+    content: "\2c5";
+    margin-left: 4px;
+}
+
+.login-pf .container {
+    padding-top: 40px;
+}
+
+.login-pf a:hover {
+    color: #0099d3;
+}
+
+#kc-logo {
+    width: 100%;
+}
+
+
+#kc-header-wrapper>div{
+    background-image: url("../img/portal-logo.png");
+    background-repeat: no-repeat;
+    width: 309px;
+    height: 32px;
+    margin: 0 auto;
+}
+
+div.kc-logo-text span {
+    display: none;
+}
+
+#kc-header {
+    color: #fff;
+    overflow: visible;
+    white-space: nowrap;
+}
+
+#kc-header-wrapper {
+    font-size: 26px;
+    text-transform: uppercase;
+    line-height: 1.2em;
+    margin-bottom: 15px;
+    color: #999999;
+    text-align: center;
+}
+
+#kc-content {
+    position: relative;
+    height: 259px;
+}
+
+#kc-content-wrapper {
+    overflow-y: hidden;
+}
+
+#kc-info {
+   /*  display: none; */
+}
+
+#kc-info-wrapper {
+    font-size: 13px;
+    width: 380px;
+    margin: 0 auto;
+    color: #999999;
+}
+
+#kc-form-options span {
+    display: block;
+}
+
+#kc-terms-text {
+    margin-bottom: 20px;
+}
+
+#kc-registration {
+    margin-bottom: 15px;
+}
+
+/* TOTP */
+
+ol#kc-totp-settings {
+    margin: 0;
+    padding: 0;
+}
+
+ol#kc-totp-settings li {
+    margin-top: 1em;
+}
+
+ol#kc-totp-settings li:first-of-type {
+    margin-top: 0;
+}
+
+#kc-totp-secret-qr-code {
+    max-width:150px;
+    max-height:150px;
+}
+
+/* OAuth */
+
+#kc-oauth h3 {
+    margin-top: 0;
+}
+
+#kc-oauth ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#kc-oauth ul li {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 12px;
+    padding: 10px 30px;
+}
+
+#kc-oauth ul li:first-of-type {
+    border-top: 0;
+}
+
+#kc-oauth .kc-role {
+    display: inline-block;
+    width: 50%;
+}
+
+/* Code */
+#kc-code textarea {
+    width: 100%;
+    height: 8em;
+}
+
+/* Social */
+
+#kc-social-providers ul {
+    padding: 0;
+    margin: 0;
+}
+
+#kc-social-providers li {
+    display: block;
+    margin-top: 5px;
+}
+
+#kc-social-providers li:first-of-type {
+    margin-top: 0;
+}
+
+.zocial {
+    width: 150px;
+}
+
+.zocial:hover {
+    color: #fff !important;
+}
+
+.zocial.facebook,
+.zocial.github,
+.zocial.google,
+.zocial.microsoft,
+.zocial.stackoverflow,
+.zocial.linkedin,
+.zocial.twitter {
+    background-image: none;
+    border-radius: 2px;
+
+    font-family: "Open Sans", sans-serif;
+    font-weight: normal;
+
+    box-shadow: none;
+    text-shadow: none;
+}
+
+.zocial.google {
+    background-color: #dd4b39 !important;
+}
+
+.zocial.facebook:hover,
+.zocial.github:hover,
+.zocial.google:hover,
+.zocial.microsoft:hover,
+.zocial.stackoverflow:hover,
+.zocial.linkedin:hover,
+.zocial.twitter:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%) !important;
+}
+
+/* Copy of zocial windows classes to be used for microsoft's social provider button */
+.zocial.microsoft {background-color: #0052a4; color: #fff;}
+.zocial.microsoft:before { content: "\f15d"; }
+
+@media (min-width: 768px) {
+    #kc-container-wrapper {
+        position: absolute;
+        width: 100%;
+    }
+
+    #kc-logo-wrapper {
+        position: absolute;
+        top: 50px;
+        right: 50px;
+    }
+
+    .login-pf .container {
+        padding-right: 80px;
+    }
+
+    #kc-locale {
+        position: absolute;
+        width: 220px;
+        text-align: right;
+        z-index: 9999;
+        margin: 0 auto;
+        top: 10px;
+        right: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    #kc-logo-wrapper {
+        background-position: center;
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    #kc-header {
+        padding-left: 15px;
+        padding-right: 15px;
+        float: none;
+        text-align: center;
+    }
+
+    #kc-form {
+        float: none;
+    }
+
+    #kc-info-wrapper {
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        margin-top: 15px;
+        padding-top: 15px;
+        padding-left: 0px;
+        padding-right: 15px;
+    }
+
+    #kc-social-providers li {
+        display: inline-block;
+        margin-right: 5px;
+    }
+
+    .login-pf .container {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    #kc-locale {
+        position: absolute;
+        width: 200px;
+        top: 10px;
+        right: 0px;
+        text-align: right;
+        z-index: 9999;
+    }
+}
+
+@media (min-height: 646px) {
+    #kc-container-wrapper {
+        bottom: 12%;
+    }
+}
+
+@media (max-height: 645px) {
+    #kc-container-wrapper {
+        padding-top: 50px;
+        top: 20%;
+    }
+}
+.login {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/portal-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    overflow: hidden;
+    z-index: -1;
+    font-family: Microsoft yahei;
+    display: table;
+}
+.login-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+}
+.login-body {
+    width: 1200px;
+    margin: 0px auto;
+    background-color: rgba(255,255,255,0.4);
+    box-shadow: 10px 10px 20px rgba(204,204,204,0.8);
+    display: table;
+}
+.login-left-wrapper {
+    width: 720px;
+    height: 400px;
+    display: table-cell;
+    vertical-align: middle;
+}
+.login-left {
+    width: 530px;
+    margin: 0px auto;
+} 
+.login-img {
+    background: url(../img/portal-login.png);
+    vertical-align: middle;
+    width: 530px;
+    height: 297px;
+    border: 0;
+}
+.login-right-wrapper {
+    width: 480px;
+    padding: 30px 0px 0px 0px;
+    background-color: #fff;
+}
+.login-title {
+    margin: 30px 0px 30px 50px;
+    color: #999999;
+    font-size: 18px;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+}
+.login-bottom {
+    position: absolute;
+    bottom: 0;
+    height: 60px;
+    width: 100%;
+    line-height: 60px;
+    text-align: center;
+}
+.form-group{
+    width: 380px;
+    height: 50px;
+    padding-left: 50px;
+    margin-bottom: 10px;
+}
+.label-group{
+    display: none;
+}
+.input-group{
+    width: 380px;
+    border-color: #ccc;
+    position: relative;
+    display: table;
+    border-collapse: separate;
+}
+.input-group>input {
+    height: 50px;
+    font-family: 宋体;
+    font-size: 14px;
+    color: #555;
+    border: 1px solid #ccc;
+    border-left: none;
+    background-color: #f8f8f8;
+    position: relative;
+    width: 100%;
+    padding: 0 12px;
+}
+.input-group-addon{
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    color: #555;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    background-color: #f8f8f8;
+    width: 1%;
+    white-space: nowrap;
+    vertical-align: middle;
+    display: table-cell;
+}
+.input-group-addon:first-child {
+    border-right: 0;
+}
+.input-group-addon>.user{
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/portal-user.png);
+}
+.input-group-addon>.key{
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/portal-key.png);
+}
+.input-group>input:focus {
+    background: #fff;
+    outline: 0;
+}
+#login-area{
+    height: 139px;
+    position: relative;
+    margin: 0px;
+    width: 480px;
+    padding: 0;
+}
+.button-group{
+    position: absolute;
+    bottom: 0px;
+    width: 480px;
+    height: 60px;
+}
+.btn{
+    display: inline-block;
+}
+.btn{
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.btn-login{
+    padding: 0px;
+    border-radius: 0px;
+    background-color: #00a0fe;
+    color: #fff;
+    float: left;
+}
+.btn-reset{
+    padding: 0px;
+    border-radius: 0px;
+    color: #999999;
+    float: right;
+}
+.btn-login, .btn-reset {
+    width: 240px;
+    height: 60px;
+    font-family: Microsoft yahei;
+    font-size: 18px;
+}
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
+    outline: 0;
+    box-shadow: none;
+}
+.login-bottom>a{
+    color: #333330;
+    font-size: 14px;
+}
+.feedbackArea{
+    margin: 0 50px 15px 50px;
+    border: 1px;
+    border-color: #ff8e8e;
+    border-style: solid;
+    background-color: #fff2f2;
+}
+.feedbackErrorIcon{
+    background-image: url(../img/error.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0px 16px;
+}
+.kc-feedback-text{
+    line-height: 25px;
+    font-family: Microsoft yahei;
+    font-size: 14px;
+}
+#kc-info-message{
+    height: 244px;
+    text-align: center;
+}
+.option-group{
+    width: 380px;
+    margin: 0 auto;
+}
+.option-group div{
+    display: inline-block;
+}
+.option-group>.checkbox{
+    float: left;
+    color: #999;
+}
+.option-group>.optionsWrapper{
+    float: right;
+}
+/* 盒子模型 */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
+}
+/* placeholder字体颜色 */
+::-moz-placeholder { color: #999999; }
+::-webkit-input-placeholder { color:#999999; }
+:-ms-input-placeholder { color:#999999; }
+
+/* 忘记密码页面 */
+.btn-reset-password{
+    border-radius: 0px;
+    background-color: #00a0fe;
+    color: #fff;
+    float: right;
+}
+.resetPasswdFormButtons{
+    position: relative;
+    width: 190px;
+}
+.resetPasswdFormButtons:first-child{
+    float: left;
+}
+.resetPasswdFormButtons:last-child{
+    float: right;
+}
+
+.resetPasswdFormButtons>.optionsWrapper{
+    float: left;
+}
+.reFormGroupClass{
+    margin: 0 auto;
+    padding: 0;
+}
+#kc-error-message{
+	margin: 30px 0px 30px 50px;
+    color: #999999;
+    font-size: 18px;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+}
+a {
+    color: #08c;
+}
+#rememberMe{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-top: 2px;
+    vertical-align: middle;
+    z-index: 9;
+}
