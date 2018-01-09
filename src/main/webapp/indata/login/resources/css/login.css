@@ -108,7 +108,21 @@ a#kc-current-locale-link::after {
     color: #fff;
     text-transform: none;
 }
-
+.s1{
+    display: inline-block;
+    margin-left: 10px;
+}
+.s2{
+	display: block;
+    line-height: 16px;
+}
+.s3{
+	display: block;
+    line-height: 12px;
+    text-align: left;
+    font-size: 12px;
+    margin-top: 2px;
+}
 div.kc-logo-text span {
     display: none;
 }
@@ -125,11 +139,11 @@ div.kc-logo-text span {
 #kc-header-wrapper {
     font-size: 26px;
     text-transform: uppercase;
-    line-height: 1.2em;
+    line-height: 2.3em;
     margin-bottom: 0;
     color: #999999;
     text-align: center;
-    padding: 12px 50px;
+    padding: 14px 50px;
 }
 
 #kc-content {
@@ -299,6 +313,7 @@ ol#kc-totp-settings li:first-of-type {
         margin: 0 auto;
         top: 10px;
         right: 40px;
+        display: none;
     }
 }
 
@@ -370,7 +385,7 @@ ol#kc-totp-settings li:first-of-type {
     background: #1D60A3;
     overflow: hidden;
     z-index: -1;
-    font-family: Microsoft yahei;
+    font-family: SimHei;
     display: table;
 }
 .login-wrapper {
@@ -459,6 +474,7 @@ ol#kc-totp-settings li:first-of-type {
     position: relative;
     width: 100%;
     padding: 0 12px;
+    font-family: SimHei;
 }
 .input-group-addon{
     padding: 6px 12px;
@@ -547,7 +563,7 @@ ol#kc-totp-settings li:first-of-type {
 .btn-login, .btn-reset {
     width: 300px;
     height: 50px;
-    font-family: Microsoft yahei;
+    font-family: SimHei;
     font-size: 18px;
 }
 .btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
@@ -575,7 +591,7 @@ ol#kc-totp-settings li:first-of-type {
 }
 .kc-feedback-text{
     line-height: 25px;
-    font-family: Microsoft yahei;
+    font-family: SimHei;
     font-size: 14px;
 }
 #kc-info-message{
@@ -621,6 +637,7 @@ ol#kc-totp-settings li:first-of-type {
     background-color: #00a0fe;
     color: #fff;
     float: right;
+    font-family: SimHei;
 }
 .resetPasswdFormButtons{
     position: relative;
@@ -658,7 +675,7 @@ ol#kc-totp-settings li:first-of-type {
 }
 a {
     color: #08c;
-    text-decoration: unset;
+    text-decoration: none;
 }
 #rememberMe{
     display: inline-block;
@@ -677,7 +694,7 @@ a {
     display: inline-block;
     text-align: center;
     height: 60px;
-    width: 177px;
+    width: 175px;
     border-bottom: 2px solid #FFF;
 }
 .tab-container>.tabactive{
@@ -686,7 +703,7 @@ a {
 .tab-container>.tab>a{
 	line-height: 56px;
 	color: #000;
-	text-decoration: unset;
+	text-decoration: none;
 	padding: 17px 55px 20px;
 }
 .tab-container>.tab>.active{

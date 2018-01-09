@@ -44,7 +44,7 @@
   	<div class="login-right-wrapper">
 
             <div id="kc-header" class="${properties.kcHeaderClass!}">
-                <div id="kc-header-wrapper" class="${properties.kcHeaderWrapperClass!}"><div></div><span> InData智数平台</span></div>
+                <div id="kc-header-wrapper" class="${properties.kcHeaderWrapperClass!}"><div></div><span class="s1"><span class="s2"> 智数平台</span><span class="s3">InData</span></span></div>
             </div>
 
             <#if realm.internationalizationEnabled>
